@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Sorting</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <button onclick="myFunction()">click here</button>
+
+    <script>
+      const numbers = [3, 45, 2, 66, 54, 5, 32, 8];
+      document.getElementById("demo").innerHTML = numbers;
+
+      function myFunction() {
+        numbers.sort(function (a, b) {
+          return a - b
+        });
+        document.getElementById("demo").innerHTML = numbers;
+      }
+    </script>
+  </body>
+</html>
